@@ -38,5 +38,9 @@ public class FuncionesUsuario {
         }
         return retorno;
     }
+    public void cobroSueldoAgregar(Usuario u,int cantAgregar){
+        int saldoActual=u.getSaldo();
+        u.setSaldo(saldoActual + cantAgregar);
+    }
     
 }
