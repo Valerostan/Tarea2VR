@@ -70,7 +70,13 @@ public class Usuario {
     public void setSaldo(int saldo) {
         this.saldo = saldo;
     }
-    
+    public boolean equals(Usuario u){
+        boolean retorno=false;
+        if(this.getCedula()==(u.getCedula())){
+            retorno=true;
+        }
+        return retorno;
+    }
 
     
 }
